@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <style>
+        /* Add your CSS styling here */
+        #counter {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <button id="clickButton">Click Me</button>
+    <p>Click Count: <span id="counter">0</span></p>
+
+    <script>
+        // JavaScript code for the click counter
+        const clickButton = document.getElementById("clickButton");
+        const counter = document.getElementById("counter");
+        let count = 0;
+
+        clickButton.addEventListener("click", () => {
+            count++;
+            counter.textContent = count;
+        });
+    </script>
+</body>
+</html>
